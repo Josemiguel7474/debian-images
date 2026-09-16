@@ -33,6 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls -all
-          Docker build -t debiancesae:v1 .
-          Docker images
+          docker build -t debiancesae:v1 .
+          docker images
 
