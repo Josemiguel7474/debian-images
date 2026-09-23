@@ -38,9 +38,7 @@ jobs:
           ls -all
           ls -la hello
           cd hello
-          docker build -t acr/images:v1 .
-          docker login acr..
-          docker push acr...
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          docker build -t sergio24082026cr.azurecr.io/jose:v1
+          docker login -u ${{ secrets,UTILIZADOR }} -p ${{ secrets,SEGREDO }} sergio24082026cr.azurecr.io
+          docker push sergio24082026cr.azurecr.io/jose:v1
 
