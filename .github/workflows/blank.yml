@@ -37,6 +37,10 @@ jobs:
         run: |
           ls -all
           ls -la hello
-          docker build -t debiancesae:v1 .
-          docker images
+          cd hello
+          docker build -t acr/images:v1 .
+          docker login acr..
+          docker push acr...
+          echo Add other actions to build,
+          echo test, and deploy your project.
 
